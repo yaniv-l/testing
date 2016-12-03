@@ -21,6 +21,7 @@ import chaiJquery from 'chai-jquery';
 /*** Setup a testing envinroment to run like a browser in a commandline ***/
 global.document = jsdom.jsdom('<!doctype html><html><body></body></html>');
 global.window = global.document.defaultView;
+global.navigator = global.window.navigator;
 // The following line will cutomise the $ jquery to refer our fake window
 const $ = _$(global.window);
 
