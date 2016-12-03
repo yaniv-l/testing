@@ -1,4 +1,4 @@
-# ReactSimpleStarter
+# react-redux testing
 Sample react-redux project that implements and shows the testing practice and implementation of react-redux: components, actions and reducers.
 
 This app is based on the Stephen Grider react-redux course.
