@@ -41,6 +41,11 @@ $.fn.simulate = function (eventName, value) {
   if (value) {
     this.val(value);
   }
+  // Since we need to simulate a dynamic event, we'll call the specific
+  // function using index (i.e instaed of TestUtils.Simulate.click)
+  // Since 'this' may be any element, like div, which can have many childs,
+  // here again, we'll access that first one (the caller and hence this
+  // reference) using index, i.e this[0]
   TestUtils.Simulate[eventName](this[0]);
 };
 
